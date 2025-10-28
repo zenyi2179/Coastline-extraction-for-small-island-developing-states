@@ -1,0 +1,24 @@
+// 定义资产的路径
+var assetPath = 'users/nicexian0011/islands/ISID_1005';
+
+// 加载FeatureCollection
+var featureCollection = ee.FeatureCollection(assetPath);
+
+// 定义一个函数来显示FeatureCollection
+function addLayerToMap(featureCollection, visParams, label) {
+  // 将FeatureCollection添加到地图上
+  var layer = ee.Image().paint(featureCollection, 0, 2);
+  Map.addLayer(layer, visParams, label);
+}
+
+// 设置可视化参数
+var visParams = {
+  color: 'red',
+  width: 3
+};
+
+// 调用函数，将FeatureCollection添加到地图上
+addLayerToMap(featureCollection, visParams, 'Island Boundary');
+
+// 显示地图
+Map.centerObject(featureCollection, 6);
