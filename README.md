@@ -358,6 +358,3 @@ output_crs: 'EPSG:4326'
 | Sparse GPS validation     | 2025 field campaign with Pacific Community (SPC) |
 
 ---
-
-**Citation (pre-print)**  
-> Your Name et al., 2024. "Three-decadal shoreline variability for 37 Small Island Developing States at 30 m resolution." *Earth System Science Data Discussions*. [doi:10.5194/essd-2024-xxx]
